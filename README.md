@@ -46,15 +46,6 @@ Visit: http://localhost:5001
 | API | Flask REST endpoint `/api/predict` |
 | Frontend | Vanilla HTML/CSS/JS with teal UI & live predictions |
 
-## Key Changes vs Original
-- **City**: Bangalore market with 10 real neighborhoods (Koramangala, Indiranagar, Whitefield…)
-- **New features**: `Has_Balcony` and `Lift` (amenity toggles in UI)
-- **Best model**: Gradient Boosting (was Random Forest) — R² 0.9259 vs 0.8945
-- **4 models compared**: Added Decision Tree to the comparison
-- **Cross-validation**: 5-fold CV scores reported
-- **Confidence band**: ±10% (was ±8%)
-- **Dataset**: 2,500 rows (was 2,000)
-- **Port**: 5001
 
 ## API Endpoints
 - `GET /api/metadata` — returns dropdown options, model R² and CV score
